@@ -3,7 +3,6 @@ package com.logical.programming;
 import java.util.*;
 
 public class ReverseNumber {
-	int number;
 	
 	void reverse(int n) {int rev=0,rem;
 		/*if(n<10) {
