@@ -13,11 +13,13 @@ public class ArrayTraversal {
                 if(array[i] < array[j])
                 {	
                 	next = array[j];
-                	//isNext(next);
                     break;
                 }
             }
-            System.out.println(next);
+            array[i]=next;
+        }
+        for(i=0;i<n;i++) {
+        System.out.println(array[i]);
         }
     }
 	
