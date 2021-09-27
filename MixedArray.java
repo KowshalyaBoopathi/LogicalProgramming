@@ -48,22 +48,21 @@ public class MixedArray {
 		}
 	}
 		System.out.println(cred+""+cblue+""+cgreen);
-			while(count<size) {for(i=0;i<size;i++) {
-				char ch=array[i];
+			while(count<size) {
+				char ch=array[count];
 				if(ch=='B') {
 					print(ch,cblue);
-					count-=cblue;
+					count+=cblue;
 					
 				}
 				else if(ch=='G') {
 					print(ch,cgreen);
-					count-=cgreen;
+					count+=cgreen;
 				}
 				else if(ch=='R') {
 					print(ch,cred);
-					count-=cred;
+					count+=cred;
 				}
-			}
 			}
 }
 	void print(char ch,int n) {
