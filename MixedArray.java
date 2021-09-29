@@ -48,7 +48,7 @@ public class MixedArray {
 			break;
 		}
 	}
-		System.out.println(cred+""+cblue+""+cgreen);
+		//System.out.println(cred+""+cblue+""+cgreen);
 		
 		int a=0,b=0,c=0;
 		
