@@ -51,8 +51,8 @@ public class SubStringPrinting {
         //StringBuffer str =new StringBuffer("However Everyday is a Day");
         //StringBuffer str =new StringBuffer("Happy Holi!");
     	
-    	//String str= "However Everyday is a Day";
-    	String str="happy Holi";
+    	String str= "However Everyday is a Day";
+    	//String str="happy Holi";
     	        
         //SubStringPrinting sub=new SubStringPrinting();
         System.out.println(Substring(str));

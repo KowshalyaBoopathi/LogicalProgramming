@@ -3,28 +3,33 @@ package com.logical.programming;
 import java.util.*;
 
 public class SteppingNumber {
-	
+	//change from outside loop
 	private void steppingNo (int start, int end) {
+		
 	    int count = 0;
+	    
 	    for (int i=start; i<= end;i++) {
-	        if (isStepping(start)) {
-	        	int step=start;
-	        	int digit=digits(start);
+	    	
+        	if(i>=0&&i<=9) {
+        		System.out.println(i);
+        		count=1;
+        	}
+        	else {
+	        	int step=i;
+	        	int digit=digits(i);
 	        	int remainder=step%10;
 	        	int quotient=(int) (step/(Math.pow(10,(digit-1))));
+	        	
 	        	if(Math.abs(remainder-quotient)==1) {
-	            System.out.println(start);
-		        count++;
+	        		if(isStepping(i)) {
+	        		System.out.println(i);
+	        		count++;
+	        		}
  		        }
-	        	if(start>=0&&start<=9) {
-	        		System.out.println(start);
-	        	}
+        	}
 	        }
-	        start++;
-	    }
-	    if(count==0) {
+	    if(count==0)
 	    	System.out.println("No stepping numbers for this range");
-	    }
 	}
 	
 	private int digits(int digit) {
@@ -37,8 +42,6 @@ public class SteppingNumber {
 	}
 	    
 	private boolean isStepping(int number) {
-	    if (number >= 0 && number <= 9) 
-	    	return true;
 	    
 	    while (number >= 10) {
 	        if (Math.abs(number % 10 - (number / 10) % 10) != 1) { 
