@@ -7,9 +7,13 @@ public class TrapNumbers {
 	int yCheck(int y) {
 		if(y<3)
 			y=3;
-		else
-			y=y;
 		return y;
+	}
+	
+	int zCheck(int z) {
+		if(z>=10)
+			z=sumOfDigits(z);
+		return z;
 	}
 
 	int sumOfDigits(int number) {
@@ -27,8 +31,9 @@ public class TrapNumbers {
 		int count=0;
 		
 		for(int x=n1;x<=n2;x++) {
-			//System.out.print(x);
+			
 			int z=sumOfDigits(x);
+			z=zCheck(z);
 
 			if((x==y) || (z==y)) {
 				y=y+2;
@@ -46,9 +51,11 @@ public class TrapNumbers {
 				y=y-1;
 				y=yCheck(y);
 			}
+			
 		}
 		if(count==0)
 			System.out.println("NONE");
+		
 	}
 	
 	/*int[] toArray(int n1, int n2) {
