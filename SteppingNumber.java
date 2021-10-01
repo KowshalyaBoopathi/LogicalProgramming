@@ -27,7 +27,7 @@ public class SteppingNumber {
 	        		}
  		        }
         	}
-	        }
+	    }
 	    if(count==0)
 	    	System.out.println("No stepping numbers for this range");
 	}
