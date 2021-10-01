@@ -3,7 +3,7 @@ package com.logical.programming;
 import java.util.*;
 
 public class SteppingNumber {
-	//change from outside loop
+
 	private void steppingNo (int start, int end) {
 		
 	    int count = 0;
